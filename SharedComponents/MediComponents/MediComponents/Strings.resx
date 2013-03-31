@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AaGradientExplanation" xml:space="preserve">
+    <value>Predicts the degree of shunting in the lungs by comparing the partial pressure of O2 in the alveoli to the partial pressure of O2 in the arterial blood. The difference between the two partial pressures indicates how well the oxygen is moving form the alveoli into the blood.</value>
+  </data>
+  <data name="AaGradientTitle" xml:space="preserve">
+    <value>A-a Gradient</value>
+  </data>
+  <data name="ABCD2Age0" xml:space="preserve">
+    <value>Less than 60</value>
+  </data>
+  <data name="ABCD2Age1" xml:space="preserve">
+    <value>60 or older</value>
+  </data>
+  <data name="ABCD2BP0" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="ABCD2BP1" xml:space="preserve">
+    <value>Elevated (140/90 or higher)</value>
+  </data>
+  <data name="ABCD2CF0" xml:space="preserve">
+    <value>Other than those specified</value>
+  </data>
+  <data name="ABCD2CF1" xml:space="preserve">
+    <value>Speech disturbance, no weakness</value>
+  </data>
+  <data name="ABCD2CF2" xml:space="preserve">
+    <value>Unilateral (one sided) weakness</value>
+  </data>
+  <data name="ABCD2Di0" xml:space="preserve">
+    <value>No diabetes</value>
+  </data>
+  <data name="ABCD2Di1" xml:space="preserve">
+    <value>Diabetes present</value>
+  </data>
+  <data name="ABCD2Du0" xml:space="preserve">
+    <value>Less than 10 minutes</value>
+  </data>
+  <data name="ABCD2Du1" xml:space="preserve">
+    <value>10-59 minutes</value>
+  </data>
+  <data name="ABCD2Du2" xml:space="preserve">
+    <value>60 minutes or longer</value>
+  </data>
+  <data name="ABCD2Explanation" xml:space="preserve">
+    <value>When a patient experiences a Transient Ischemic Attack (TIA) the ABCD2 score is used to determine the risk for stroke within the first two days post attack. The ABCD2 score is graded on 5 criteria: clinical features, age, duration of TIA, blood pressure, and presence of diabetes. The evaluation is added up and the score ranges from 0‐7: 0‐3 is low (2 day risk = 1.0%, 7 day risk = 1.2), 4‐5 is moderate (2 day risk = 4.1%, 7 day risk = 5.9%), 6‐7 is high (2 day risk = 8.1%, 7 day risk = 11.7%).</value>
+  </data>
+  <data name="ABCD2High" xml:space="preserve">
+    <value> (high)</value>
+  </data>
+  <data name="ABCD2Low" xml:space="preserve">
+    <value> (low)</value>
+  </data>
+  <data name="ABCD2Mod" xml:space="preserve">
+    <value> (moderate)</value>
+  </data>
+  <data name="ABCD2Title" xml:space="preserve">
+    <value>ABCD2</value>
+  </data>
+  <data name="ABCompTitle" xml:space="preserve">
+    <value>Acid Base Compensation</value>
+  </data>
+  <data name="Actual" xml:space="preserve">
+    <value>Actual</value>
+  </data>
+  <data name="AfricanAmerican" xml:space="preserve">
+    <value>African American</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="ApgarActivity" xml:space="preserve">
+    <value>Activity</value>
+  </data>
+  <data name="ApgarActivity0" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ApgarActivity1" xml:space="preserve">
+    <value>Some flexion</value>
+  </data>
+  <data name="ApgarActivity2" xml:space="preserve">
+    <value>Flexed arms and legs, resist extension</value>
+  </data>
+  <data name="ApgarAppearance" xml:space="preserve">
+    <value>Appearance</value>
+  </data>
+  <data name="ApgarAppearance0" xml:space="preserve">
+    <value>Blue or pale all over</value>
+  </data>
+  <data name="ApgarAppearance1" xml:space="preserve">
+    <value>Blue at extremities, body pink</value>
+  </data>
+  <data name="ApgarAppearance2" xml:space="preserve">
+    <value>Body and extremities pink</value>
+  </data>
+  <data name="ApgarExplanation" xml:space="preserve">
+    <value>Used to grade newborn babies on 5 criteria on a scale of 0‐2. Performed at one and five minutes after birth. If the score is low, it may be repeated at 10, 15 and 30 minutes as well. Scores are summed and the total score is evaluated. 3 and below is considered critically low, 4‐6 is low, 7‐10 is normal.</value>
+  </data>
+  <data name="ApgarGrimace" xml:space="preserve">
+    <value>Grimace</value>
+  </data>
+  <data name="ApgarGrimace0" xml:space="preserve">
+    <value>No response to stimulation</value>
+  </data>
+  <data name="ApgarGrimace1" xml:space="preserve">
+    <value>Grimace/feeble cry when stimulated</value>
+  </data>
+  <data name="ApgarGrimace2" xml:space="preserve">
+    <value>Cry or pull away when stimluated</value>
+  </data>
+  <data name="ApgarPulse" xml:space="preserve">
+    <value>Pulse</value>
+  </data>
+  <data name="ApgarPulse0" xml:space="preserve">
+    <value>Absent</value>
+  </data>
+  <data name="ApgarPulse1" xml:space="preserve">
+    <value>Below 100</value>
+  </data>
+  <data name="ApgarPulse2" xml:space="preserve">
+    <value>100 or above</value>
+  </data>
+  <data name="ApgarRespiration" xml:space="preserve">
+    <value>Respiration</value>
+  </data>
+  <data name="ApgarRespiration0" xml:space="preserve">
+    <value>Absent</value>
+  </data>
+  <data name="ApgarRespiration1" xml:space="preserve">
+    <value>Weak, irregular, gasping</value>
+  </data>
+  <data name="ApgarRespiration2" xml:space="preserve">
+    <value>Strong, lusty cry</value>
+  </data>
+  <data name="ApgarTitle" xml:space="preserve">
+    <value>APGAR</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>MediCalc</value>
+  </data>
+  <data name="BloodPressure" xml:space="preserve">
+    <value>Blood Pressure</value>
+  </data>
+  <data name="BmiExplanation" xml:space="preserve">
+    <value>Used for adults over 20 years old, used to indicate weight status and correlates with body fat. May overestimate BMI in athletes and those
+with muscular build. May underestimate in the elderly and in those who have lost muscle mass.</value>
+  </data>
+  <data name="BmiHeight" xml:space="preserve">
+    <value>Height (in inches)</value>
+  </data>
+  <data name="BmiNormal" xml:space="preserve">
+    <value> (normal)</value>
+  </data>
+  <data name="BmiObese" xml:space="preserve">
+    <value> (obese)</value>
+  </data>
+  <data name="BmiOverweight" xml:space="preserve">
+    <value> (overweight)</value>
+  </data>
+  <data name="BmiTitle" xml:space="preserve">
+    <value>BMI</value>
+  </data>
+  <data name="BmiUnderweight" xml:space="preserve">
+    <value> (underweight)</value>
+  </data>
+  <data name="BmiWeight" xml:space="preserve">
+    <value>Weight (in pounds)</value>
+  </data>
+  <data name="ClinicalFeatures" xml:space="preserve">
+    <value>Clinical Features</value>
+  </data>
+  <data name="Creatinine" xml:space="preserve">
+    <value>Creatinine</value>
+  </data>
+  <data name="Diabetes" xml:space="preserve">
+    <value>Diabetes</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="Expected" xml:space="preserve">
+    <value>Expected</value>
+  </data>
+  <data name="ExplanationTabTitle" xml:space="preserve">
+    <value>Explanation</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="FormulaTabTitle" xml:space="preserve">
+    <value>Formula</value>
+  </data>
+  <data name="FormulaTitleFormatString" xml:space="preserve">
+    <value>{0} - {1}</value>
+    <comment>{0} = app title, {1} = formula title</comment>
+  </data>
+  <data name="GfrExplanation" xml:space="preserve">
+    <value>From the Modification of Diet in Renal Diseas study, is used to estimate glomerular filtration rate or the flow rate of filtered fluid through the kidney.  Will underestimate GFR in patients with GFR &gt;60 mL/min.</value>
+  </data>
+  <data name="GfrTitle" xml:space="preserve">
+    <value>GFR (MRDR)</value>
+  </data>
+  <data name="High" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="IndicativeOfFormat" xml:space="preserve">
+    <value>Indicative of {0}</value>
+    <comment>{0} = thing being indicated</comment>
+  </data>
+  <data name="Low" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="MetaAcid" xml:space="preserve">
+    <value>Metabolic Acidosis</value>
+  </data>
+  <data name="MetaAlka" xml:space="preserve">
+    <value>Metabolic Alkalosis</value>
+  </data>
+  <data name="RespAcid" xml:space="preserve">
+    <value>Respiratory Acidosis</value>
+  </data>
+  <data name="RespAlka" xml:space="preserve">
+    <value>Respiratory Alkalosis</value>
+  </data>
+  <data name="ScoreEquals" xml:space="preserve">
+    <value>Score = </value>
+  </data>
+  <data name="UnderlyingFormat" xml:space="preserve">
+    <value>Actual level is {0} (potential underlying {1})</value>
+    <comment>{0} = high|low, {1} = condition</comment>
+  </data>
+  <data name="AnionGapExplanation" xml:space="preserve">
+    <value>The calculated estimated difference between the measured anions and cations in serum.  Common cations include Na, K, Ca and Mg.  Common anions are Cl, Bicarb, and phosphate.  Anion gap is used to help identify cause of metabolic acidosis.  Increased anion gap acidosis indicates MUDPILERS etiology, while non-anion gap acidosis indicates HARDUPS etiology.  Normal anion gap is generally regarded as &lt;11 mEq/L.  A low anion gap is commonly brought about by hypoalbuminemia.
+
+Anion Gap Metabolic Acidosis: MUDPILERS
+  - Methanol
+  - Uremia
+  - DKA/Alcoholic KA
+  - Paraldehyde
+  - Isoniazid
+  - Lactic Acidosis
+  - Etoh/Ethylene Glycol
+  - Rhabdo/Renal Failure
+  - Salicylates
+
+Non-Anion Gap Acidosis: HARDUPS
+  - HyperAlimentation
+  - Acetazolamide
+  - Renal Tubular Acidosis
+  - Diarrhea
+  - Uretero-Pelvic Shunt
+  - Post-Hypocapnia
+  - Spironolactone</value>
+  </data>
+  <data name="AnionGapTitle" xml:space="preserve">
+    <value>Anion Gap</value>
+  </data>
+  <data name="CACorrectionExplanation" xml:space="preserve">
+    <value>Calculation is used when the patient albumin levels are abnormal.  Used to make up for the change in total calcium due to altered albumin binding.  The calculation gives an estimate of what the calcium level would be if the albumin levels were normal.  When the patient has decreased albumin, the corrected calcium level will be higher than the total calcium.
+
+Normal Ca levels = 8.5 - 10.5 mg/dL</value>
+  </data>
+  <data name="CACorrectionTitle" xml:space="preserve">
+    <value>Calcium/albumin Correction</value>
+  </data>
+  <data name="CGEExplanation" xml:space="preserve">
+    <value>Used to estimate creatinine clearance which is used to estimate GFR in ml/min.  Glomerular filtration rate (GFR) is the volume of fluid filtered from the glomerular capillaries into the bowman's capsule typically given at a per minute rate.</value>
+  </data>
+  <data name="CGETitle" xml:space="preserve">
+    <value>Cockcroft-Gault Equation</value>
+  </data>
+  <data name="CSCExplanation" xml:space="preserve">
+    <value>Used to correlate changing from one corticosteroid to another based on anti-inflammatory potencies.  The table below shows the values used to calculate doses.  Biological half life is used to more accurately reflect the duration of action in vivo of the corticosteroid.  Fludrocortisone is typically used for it's mineralcorticoid action and has negligible anti-inflammatory effects at therapeutic doses.
+  - Short bio-half life = 8-12 hours
+  - Intermediate bio-half life = 12-36 hours
+  - Long bio-half life = 36-72 hours</value>
+  </data>
+  <data name="CSCTitle" xml:space="preserve">
+    <value>Corticosteroid Converter</value>
+  </data>
+</root>

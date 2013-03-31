@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Charts>
+  <Chart Compound="Cortisone">
+    <Compound Compound="Cortisone" EquivalentDose="1" AntiInflammatoryPotency="0.8" MineralocorticoidPotency="0.8" BiologicalHalfLife="Short"/>
+    <Compound Compound="Hydrocortisone" EquivalentDose="0.8" AntiInflammatoryPotency="1" MineralocorticoidPotency="1" BiologicalHalfLife="Short"/>
+    <Compound Compound="Prednisone" EquivalentDose="0.2" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Prednisolone" EquivalentDose="0.2" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Triamcinolone" EquivalentDose="0.16" AntiInflammatoryPotency="5" MineralocorticoidPotency="0" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Methylprednisolone" EquivalentDose="0.16" AntiInflammatoryPotency="5" MineralocorticoidPotency="0.25" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Betamethasone" EquivalentDose="0.03" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Dexamethasone" EquivalentDose="0.03" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Fludrocortisone" EquivalentDose="" AntiInflammatoryPotency="0" MineralocorticoidPotency="125" BiologicalHalfLife="Intermediate"/>
+  </Chart>
+  <Chart Compound="Hydrocortisone">
+    <Compound Compound="Cortisone" EquivalentDose="1.25" AntiInflammatoryPotency="0.8" MineralocorticoidPotency="0.8" BiologicalHalfLife="Short"/>
+    <Compound Compound="Hydrocortisone" EquivalentDose="1" AntiInflammatoryPotency="1" MineralocorticoidPotency="1" BiologicalHalfLife="Short"/>
+    <Compound Compound="Prednisone" EquivalentDose="0.25" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Prednisolone" EquivalentDose="0.25" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Triamcinolone" EquivalentDose="0.2" AntiInflammatoryPotency="5" MineralocorticoidPotency="0" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Methylprednisolone" EquivalentDose="0.2" AntiInflammatoryPotency="5" MineralocorticoidPotency="0.25" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Betamethasone" EquivalentDose="0.04" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Dexamethasone" EquivalentDose="0.04" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Fludrocortisone" EquivalentDose="" AntiInflammatoryPotency="0" MineralocorticoidPotency="125" BiologicalHalfLife="Intermediate"/>
+  </Chart>
+  <Chart Compound="Prednisone">
+    <Compound Compound="Cortisone" EquivalentDose="5" AntiInflammatoryPotency="0.8" MineralocorticoidPotency="0.8" BiologicalHalfLife="Short"/>
+    <Compound Compound="Hydrocortisone" EquivalentDose="4" AntiInflammatoryPotency="1" MineralocorticoidPotency="1" BiologicalHalfLife="Short"/>
+    <Compound Compound="Prednisone" EquivalentDose="1" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Prednisolone" EquivalentDose="1" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Triamcinolone" EquivalentDose="0.8" AntiInflammatoryPotency="5" MineralocorticoidPotency="0" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Methylprednisolone" EquivalentDose="0.8" AntiInflammatoryPotency="5" MineralocorticoidPotency="0.25" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Betamethasone" EquivalentDose="0.16" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Dexamethasone" EquivalentDose="0.16" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Fludrocortisone" EquivalentDose="" AntiInflammatoryPotency="0" MineralocorticoidPotency="125" BiologicalHalfLife="Intermediate"/>
+  </Chart>
+  <Chart Compound="Prednisolone">
+    <Compound Compound="Cortisone" EquivalentDose="5" AntiInflammatoryPotency="0.8" MineralocorticoidPotency="0.8" BiologicalHalfLife="Short"/>
+    <Compound Compound="Hydrocortisone" EquivalentDose="4" AntiInflammatoryPotency="1" MineralocorticoidPotency="1" BiologicalHalfLife="Short"/>
+    <Compound Compound="Prednisone" EquivalentDose="1" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Prednisolone" EquivalentDose="1" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Triamcinolone" EquivalentDose="0.8" AntiInflammatoryPotency="5" MineralocorticoidPotency="0" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Methylprednisolone" EquivalentDose="0.8" AntiInflammatoryPotency="5" MineralocorticoidPotency="0.25" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Betamethasone" EquivalentDose="0.16" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Dexamethasone" EquivalentDose="0.16" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Fludrocortisone" EquivalentDose="" AntiInflammatoryPotency="0" MineralocorticoidPotency="125" BiologicalHalfLife="Intermediate"/>
+  </Chart>
+  <Chart Compound="Triamcinolone">
+    <Compound Compound="Cortisone" EquivalentDose="6" AntiInflammatoryPotency="0.8" MineralocorticoidPotency="0.8" BiologicalHalfLife="Short"/>
+    <Compound Compound="Hydrocortisone" EquivalentDose="5" AntiInflammatoryPotency="1" MineralocorticoidPotency="1" BiologicalHalfLife="Short"/>
+    <Compound Compound="Prednisone" EquivalentDose="1.25" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Prednisolone" EquivalentDose="1.25" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Triamcinolone" EquivalentDose="1" AntiInflammatoryPotency="5" MineralocorticoidPotency="0" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Methylprednisolone" EquivalentDose="1" AntiInflammatoryPotency="5" MineralocorticoidPotency="0.25" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Betamethasone" EquivalentDose="0.2" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Dexamethasone" EquivalentDose="0.2" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Fludrocortisone" EquivalentDose="" AntiInflammatoryPotency="0" MineralocorticoidPotency="125" BiologicalHalfLife="Intermediate"/>
+  </Chart>
+  <Chart Compound="Methylprednisolone">
+    <Compound Compound="Cortisone" EquivalentDose="6" AntiInflammatoryPotency="0.8" MineralocorticoidPotency="0.8" BiologicalHalfLife="Short"/>
+    <Compound Compound="Hydrocortisone" EquivalentDose="5" AntiInflammatoryPotency="1" MineralocorticoidPotency="1" BiologicalHalfLife="Short"/>
+    <Compound Compound="Prednisone" EquivalentDose="1.25" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Prednisolone" EquivalentDose="1.25" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Triamcinolone" EquivalentDose="1" AntiInflammatoryPotency="5" MineralocorticoidPotency="0" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Methylprednisolone" EquivalentDose="1" AntiInflammatoryPotency="5" MineralocorticoidPotency="0.25" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Betamethasone" EquivalentDose="0.2" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Dexamethasone" EquivalentDose="0.2" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Fludrocortisone" EquivalentDose="" AntiInflammatoryPotency="0" MineralocorticoidPotency="125" BiologicalHalfLife="Intermediate"/>
+  </Chart>
+  <Chart Compound="Betamethasone">
+    <Compound Compound="Cortisone" EquivalentDose="31" AntiInflammatoryPotency="0.8" MineralocorticoidPotency="0.8" BiologicalHalfLife="Short"/>
+    <Compound Compound="Hydrocortisone" EquivalentDose="25" AntiInflammatoryPotency="1" MineralocorticoidPotency="1" BiologicalHalfLife="Short"/>
+    <Compound Compound="Prednisone" EquivalentDose="6" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Prednisolone" EquivalentDose="6" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Triamcinolone" EquivalentDose="5" AntiInflammatoryPotency="5" MineralocorticoidPotency="0" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Methylprednisolone" EquivalentDose="5" AntiInflammatoryPotency="5" MineralocorticoidPotency="0.25" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Betamethasone" EquivalentDose="1" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Dexamethasone" EquivalentDose="1" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Fludrocortisone" EquivalentDose="" AntiInflammatoryPotency="0" MineralocorticoidPotency="125" BiologicalHalfLife="Intermediate"/>
+  </Chart>
+  <Chart Compound="Dexamethasone">
+    <Compound Compound="Cortisone" EquivalentDose="31" AntiInflammatoryPotency="0.8" MineralocorticoidPotency="0.8" BiologicalHalfLife="Short"/>
+    <Compound Compound="Hydrocortisone" EquivalentDose="25" AntiInflammatoryPotency="1" MineralocorticoidPotency="1" BiologicalHalfLife="Short"/>
+    <Compound Compound="Prednisone" EquivalentDose="6" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Prednisolone" EquivalentDose="6" AntiInflammatoryPotency="4" MineralocorticoidPotency="0.6" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Triamcinolone" EquivalentDose="5" AntiInflammatoryPotency="5" MineralocorticoidPotency="0" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Methylprednisolone" EquivalentDose="5" AntiInflammatoryPotency="5" MineralocorticoidPotency="0.25" BiologicalHalfLife="Intermediate"/>
+    <Compound Compound="Betamethasone" EquivalentDose="1" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Dexamethasone" EquivalentDose="1" AntiInflammatoryPotency="25" MineralocorticoidPotency="0" BiologicalHalfLife="Long"/>
+    <Compound Compound="Fludrocortisone" EquivalentDose="" AntiInflammatoryPotency="0" MineralocorticoidPotency="125" BiologicalHalfLife="Intermediate"/>
+  </Chart>
+</Charts>
