@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Serialization;
 
 namespace MediComponents.ViewModel
 {
+	[DataContract]
 	public class CGEViewModel : ViewModel
 	{
 		public string Title
@@ -14,6 +11,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private int _age;
+		[DataMember]
 		public int Age
 		{
 			get { return _age; }
@@ -25,6 +23,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private double _mass;
+		[DataMember]
 		public double Mass
 		{
 			get { return _mass; }
@@ -36,6 +35,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private bool _isFemale;
+		[DataMember]
 		public bool IsFemale
 		{
 			get { return _isFemale; }
@@ -47,6 +47,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private double _creat;
+		[DataMember]
 		public double Creat
 		{
 			get { return _creat; }
@@ -60,6 +61,34 @@ namespace MediComponents.ViewModel
 		public double Result
 		{
 			get { return ((140 - Age) * Mass * (IsFemale ? 0.85 : 1)) / (72 * Creat); }
+		}
+
+		public CGEViewModel() : base() { }
+		public CGEViewModel(bool isDesign) : base(isDesign) { }
+
+		protected override void InitializeDesignTime()
+		{
+			InitializeRunTime();
+		}
+
+		protected override void InitializeRunTime()
+		{
+			Age = 28;
+			Mass = 80;
+			IsFemale = false;
+			Creat = 12;
+		}
+
+		public override bool Rehydrate(object vm)
+		{
+			var other = vm as CGEViewModel;
+			if (other == null)
+				return false;
+			Age = other.Age;
+			Mass = other.Mass;
+			IsFemale = other.IsFemale;
+			Creat = other.Creat;
+			return base.Rehydrate(vm);
 		}
 	}
 }

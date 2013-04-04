@@ -14,7 +14,8 @@ namespace MediComponents
 
 		protected virtual void OnPropertyChanged(string propertyName = null)
 		{
-			PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			if (PropertyChanged != null)
+				PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 		}
 
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -22,9 +23,7 @@ namespace MediComponents
 		protected bool SetProperty<T>(ref T propertyBacker, T value, [CallerMemberName] string propertyName = null)
 		{
 			if (Equals(propertyBacker, value))
-			{
 				return false;
-			}
 
 			propertyBacker = value;
 			OnPropertyChanged(propertyName);

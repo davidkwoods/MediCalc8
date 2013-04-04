@@ -23,7 +23,7 @@ namespace MediComponents {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Strings {
+    public class Strings {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -37,7 +37,7 @@ namespace MediComponents {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MediComponents.Strings", typeof(Strings).GetTypeInfo().Assembly);
@@ -52,7 +52,7 @@ namespace MediComponents {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -64,16 +64,25 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Predicts the degree of shunting in the lungs by comparing the partial pressure of O2 in the alveoli to the partial pressure of O2 in the arterial blood. The difference between the two partial pressures indicates how well the oxygen is moving form the alveoli into the blood..
         /// </summary>
-        internal static string AaGradientExplanation {
+        public static string AaGradientExplanation {
             get {
                 return ResourceManager.GetString("AaGradientExplanation", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A-a Gradient = {0} mmHg.
+        /// </summary>
+        public static string AaGradientResultFormat {
+            get {
+                return ResourceManager.GetString("AaGradientResultFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to A-a Gradient.
         /// </summary>
-        internal static string AaGradientTitle {
+        public static string AaGradientTitle {
             get {
                 return ResourceManager.GetString("AaGradientTitle", resourceCulture);
             }
@@ -82,7 +91,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Less than 60.
         /// </summary>
-        internal static string ABCD2Age0 {
+        public static string ABCD2Age0 {
             get {
                 return ResourceManager.GetString("ABCD2Age0", resourceCulture);
             }
@@ -91,7 +100,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to 60 or older.
         /// </summary>
-        internal static string ABCD2Age1 {
+        public static string ABCD2Age1 {
             get {
                 return ResourceManager.GetString("ABCD2Age1", resourceCulture);
             }
@@ -100,7 +109,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Normal.
         /// </summary>
-        internal static string ABCD2BP0 {
+        public static string ABCD2BP0 {
             get {
                 return ResourceManager.GetString("ABCD2BP0", resourceCulture);
             }
@@ -109,7 +118,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Elevated (140/90 or higher).
         /// </summary>
-        internal static string ABCD2BP1 {
+        public static string ABCD2BP1 {
             get {
                 return ResourceManager.GetString("ABCD2BP1", resourceCulture);
             }
@@ -118,7 +127,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Other than those specified.
         /// </summary>
-        internal static string ABCD2CF0 {
+        public static string ABCD2CF0 {
             get {
                 return ResourceManager.GetString("ABCD2CF0", resourceCulture);
             }
@@ -127,7 +136,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Speech disturbance, no weakness.
         /// </summary>
-        internal static string ABCD2CF1 {
+        public static string ABCD2CF1 {
             get {
                 return ResourceManager.GetString("ABCD2CF1", resourceCulture);
             }
@@ -136,7 +145,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Unilateral (one sided) weakness.
         /// </summary>
-        internal static string ABCD2CF2 {
+        public static string ABCD2CF2 {
             get {
                 return ResourceManager.GetString("ABCD2CF2", resourceCulture);
             }
@@ -145,7 +154,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to No diabetes.
         /// </summary>
-        internal static string ABCD2Di0 {
+        public static string ABCD2Di0 {
             get {
                 return ResourceManager.GetString("ABCD2Di0", resourceCulture);
             }
@@ -154,7 +163,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Diabetes present.
         /// </summary>
-        internal static string ABCD2Di1 {
+        public static string ABCD2Di1 {
             get {
                 return ResourceManager.GetString("ABCD2Di1", resourceCulture);
             }
@@ -163,7 +172,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Less than 10 minutes.
         /// </summary>
-        internal static string ABCD2Du0 {
+        public static string ABCD2Du0 {
             get {
                 return ResourceManager.GetString("ABCD2Du0", resourceCulture);
             }
@@ -172,7 +181,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to 10-59 minutes.
         /// </summary>
-        internal static string ABCD2Du1 {
+        public static string ABCD2Du1 {
             get {
                 return ResourceManager.GetString("ABCD2Du1", resourceCulture);
             }
@@ -181,7 +190,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to 60 minutes or longer.
         /// </summary>
-        internal static string ABCD2Du2 {
+        public static string ABCD2Du2 {
             get {
                 return ResourceManager.GetString("ABCD2Du2", resourceCulture);
             }
@@ -190,43 +199,52 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to When a patient experiences a Transient Ischemic Attack (TIA) the ABCD2 score is used to determine the risk for stroke within the first two days post attack. The ABCD2 score is graded on 5 criteria: clinical features, age, duration of TIA, blood pressure, and presence of diabetes. The evaluation is added up and the score ranges from 0‐7: 0‐3 is low (2 day risk = 1.0%, 7 day risk = 1.2), 4‐5 is moderate (2 day risk = 4.1%, 7 day risk = 5.9%), 6‐7 is high (2 day risk = 8.1%, 7 day risk = 11.7%)..
         /// </summary>
-        internal static string ABCD2Explanation {
+        public static string ABCD2Explanation {
             get {
                 return ResourceManager.GetString("ABCD2Explanation", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  (high).
+        ///   Looks up a localized string similar to (high).
         /// </summary>
-        internal static string ABCD2High {
+        public static string ABCD2High {
             get {
                 return ResourceManager.GetString("ABCD2High", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  (low).
+        ///   Looks up a localized string similar to (low).
         /// </summary>
-        internal static string ABCD2Low {
+        public static string ABCD2Low {
             get {
                 return ResourceManager.GetString("ABCD2Low", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  (moderate).
+        ///   Looks up a localized string similar to (moderate).
         /// </summary>
-        internal static string ABCD2Mod {
+        public static string ABCD2Mod {
             get {
                 return ResourceManager.GetString("ABCD2Mod", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} {1} {2}.
+        /// </summary>
+        public static string ABCD2ResultFormat {
+            get {
+                return ResourceManager.GetString("ABCD2ResultFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ABCD2.
         /// </summary>
-        internal static string ABCD2Title {
+        public static string ABCD2Title {
             get {
                 return ResourceManager.GetString("ABCD2Title", resourceCulture);
             }
@@ -235,7 +253,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Acid Base Compensation.
         /// </summary>
-        internal static string ABCompTitle {
+        public static string ABCompTitle {
             get {
                 return ResourceManager.GetString("ABCompTitle", resourceCulture);
             }
@@ -244,7 +262,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Actual.
         /// </summary>
-        internal static string Actual {
+        public static string Actual {
             get {
                 return ResourceManager.GetString("Actual", resourceCulture);
             }
@@ -253,7 +271,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to African American.
         /// </summary>
-        internal static string AfricanAmerican {
+        public static string AfricanAmerican {
             get {
                 return ResourceManager.GetString("AfricanAmerican", resourceCulture);
             }
@@ -262,7 +280,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Age.
         /// </summary>
-        internal static string Age {
+        public static string Age {
             get {
                 return ResourceManager.GetString("Age", resourceCulture);
             }
@@ -273,7 +291,7 @@ namespace MediComponents {
         ///
         ///Anion Gap Metabolic Acidosis: MUDPIL [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string AnionGapExplanation {
+        public static string AnionGapExplanation {
             get {
                 return ResourceManager.GetString("AnionGapExplanation", resourceCulture);
             }
@@ -282,7 +300,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Anion Gap.
         /// </summary>
-        internal static string AnionGapTitle {
+        public static string AnionGapTitle {
             get {
                 return ResourceManager.GetString("AnionGapTitle", resourceCulture);
             }
@@ -291,7 +309,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Activity.
         /// </summary>
-        internal static string ApgarActivity {
+        public static string ApgarActivity {
             get {
                 return ResourceManager.GetString("ApgarActivity", resourceCulture);
             }
@@ -300,7 +318,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to None.
         /// </summary>
-        internal static string ApgarActivity0 {
+        public static string ApgarActivity0 {
             get {
                 return ResourceManager.GetString("ApgarActivity0", resourceCulture);
             }
@@ -309,7 +327,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Some flexion.
         /// </summary>
-        internal static string ApgarActivity1 {
+        public static string ApgarActivity1 {
             get {
                 return ResourceManager.GetString("ApgarActivity1", resourceCulture);
             }
@@ -318,7 +336,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Flexed arms and legs, resist extension.
         /// </summary>
-        internal static string ApgarActivity2 {
+        public static string ApgarActivity2 {
             get {
                 return ResourceManager.GetString("ApgarActivity2", resourceCulture);
             }
@@ -327,7 +345,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Appearance.
         /// </summary>
-        internal static string ApgarAppearance {
+        public static string ApgarAppearance {
             get {
                 return ResourceManager.GetString("ApgarAppearance", resourceCulture);
             }
@@ -336,7 +354,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Blue or pale all over.
         /// </summary>
-        internal static string ApgarAppearance0 {
+        public static string ApgarAppearance0 {
             get {
                 return ResourceManager.GetString("ApgarAppearance0", resourceCulture);
             }
@@ -345,7 +363,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Blue at extremities, body pink.
         /// </summary>
-        internal static string ApgarAppearance1 {
+        public static string ApgarAppearance1 {
             get {
                 return ResourceManager.GetString("ApgarAppearance1", resourceCulture);
             }
@@ -354,7 +372,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Body and extremities pink.
         /// </summary>
-        internal static string ApgarAppearance2 {
+        public static string ApgarAppearance2 {
             get {
                 return ResourceManager.GetString("ApgarAppearance2", resourceCulture);
             }
@@ -363,7 +381,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Used to grade newborn babies on 5 criteria on a scale of 0‐2. Performed at one and five minutes after birth. If the score is low, it may be repeated at 10, 15 and 30 minutes as well. Scores are summed and the total score is evaluated. 3 and below is considered critically low, 4‐6 is low, 7‐10 is normal..
         /// </summary>
-        internal static string ApgarExplanation {
+        public static string ApgarExplanation {
             get {
                 return ResourceManager.GetString("ApgarExplanation", resourceCulture);
             }
@@ -372,7 +390,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Grimace.
         /// </summary>
-        internal static string ApgarGrimace {
+        public static string ApgarGrimace {
             get {
                 return ResourceManager.GetString("ApgarGrimace", resourceCulture);
             }
@@ -381,7 +399,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to No response to stimulation.
         /// </summary>
-        internal static string ApgarGrimace0 {
+        public static string ApgarGrimace0 {
             get {
                 return ResourceManager.GetString("ApgarGrimace0", resourceCulture);
             }
@@ -390,7 +408,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Grimace/feeble cry when stimulated.
         /// </summary>
-        internal static string ApgarGrimace1 {
+        public static string ApgarGrimace1 {
             get {
                 return ResourceManager.GetString("ApgarGrimace1", resourceCulture);
             }
@@ -399,7 +417,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Cry or pull away when stimluated.
         /// </summary>
-        internal static string ApgarGrimace2 {
+        public static string ApgarGrimace2 {
             get {
                 return ResourceManager.GetString("ApgarGrimace2", resourceCulture);
             }
@@ -408,7 +426,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Pulse.
         /// </summary>
-        internal static string ApgarPulse {
+        public static string ApgarPulse {
             get {
                 return ResourceManager.GetString("ApgarPulse", resourceCulture);
             }
@@ -417,7 +435,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Absent.
         /// </summary>
-        internal static string ApgarPulse0 {
+        public static string ApgarPulse0 {
             get {
                 return ResourceManager.GetString("ApgarPulse0", resourceCulture);
             }
@@ -426,7 +444,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Below 100.
         /// </summary>
-        internal static string ApgarPulse1 {
+        public static string ApgarPulse1 {
             get {
                 return ResourceManager.GetString("ApgarPulse1", resourceCulture);
             }
@@ -435,7 +453,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to 100 or above.
         /// </summary>
-        internal static string ApgarPulse2 {
+        public static string ApgarPulse2 {
             get {
                 return ResourceManager.GetString("ApgarPulse2", resourceCulture);
             }
@@ -444,7 +462,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Respiration.
         /// </summary>
-        internal static string ApgarRespiration {
+        public static string ApgarRespiration {
             get {
                 return ResourceManager.GetString("ApgarRespiration", resourceCulture);
             }
@@ -453,7 +471,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Absent.
         /// </summary>
-        internal static string ApgarRespiration0 {
+        public static string ApgarRespiration0 {
             get {
                 return ResourceManager.GetString("ApgarRespiration0", resourceCulture);
             }
@@ -462,7 +480,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Weak, irregular, gasping.
         /// </summary>
-        internal static string ApgarRespiration1 {
+        public static string ApgarRespiration1 {
             get {
                 return ResourceManager.GetString("ApgarRespiration1", resourceCulture);
             }
@@ -471,7 +489,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Strong, lusty cry.
         /// </summary>
-        internal static string ApgarRespiration2 {
+        public static string ApgarRespiration2 {
             get {
                 return ResourceManager.GetString("ApgarRespiration2", resourceCulture);
             }
@@ -480,7 +498,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to APGAR.
         /// </summary>
-        internal static string ApgarTitle {
+        public static string ApgarTitle {
             get {
                 return ResourceManager.GetString("ApgarTitle", resourceCulture);
             }
@@ -489,7 +507,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to MediCalc.
         /// </summary>
-        internal static string AppTitle {
+        public static string AppTitle {
             get {
                 return ResourceManager.GetString("AppTitle", resourceCulture);
             }
@@ -498,7 +516,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Blood Pressure.
         /// </summary>
-        internal static string BloodPressure {
+        public static string BloodPressure {
             get {
                 return ResourceManager.GetString("BloodPressure", resourceCulture);
             }
@@ -508,7 +526,7 @@ namespace MediComponents {
         ///   Looks up a localized string similar to Used for adults over 20 years old, used to indicate weight status and correlates with body fat. May overestimate BMI in athletes and those
         ///with muscular build. May underestimate in the elderly and in those who have lost muscle mass..
         /// </summary>
-        internal static string BmiExplanation {
+        public static string BmiExplanation {
             get {
                 return ResourceManager.GetString("BmiExplanation", resourceCulture);
             }
@@ -517,7 +535,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Height (in inches).
         /// </summary>
-        internal static string BmiHeight {
+        public static string BmiHeight {
             get {
                 return ResourceManager.GetString("BmiHeight", resourceCulture);
             }
@@ -526,7 +544,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to  (normal).
         /// </summary>
-        internal static string BmiNormal {
+        public static string BmiNormal {
             get {
                 return ResourceManager.GetString("BmiNormal", resourceCulture);
             }
@@ -535,7 +553,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to  (obese).
         /// </summary>
-        internal static string BmiObese {
+        public static string BmiObese {
             get {
                 return ResourceManager.GetString("BmiObese", resourceCulture);
             }
@@ -544,7 +562,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to  (overweight).
         /// </summary>
-        internal static string BmiOverweight {
+        public static string BmiOverweight {
             get {
                 return ResourceManager.GetString("BmiOverweight", resourceCulture);
             }
@@ -553,7 +571,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to BMI.
         /// </summary>
-        internal static string BmiTitle {
+        public static string BmiTitle {
             get {
                 return ResourceManager.GetString("BmiTitle", resourceCulture);
             }
@@ -562,7 +580,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to  (underweight).
         /// </summary>
-        internal static string BmiUnderweight {
+        public static string BmiUnderweight {
             get {
                 return ResourceManager.GetString("BmiUnderweight", resourceCulture);
             }
@@ -571,7 +589,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Weight (in pounds).
         /// </summary>
-        internal static string BmiWeight {
+        public static string BmiWeight {
             get {
                 return ResourceManager.GetString("BmiWeight", resourceCulture);
             }
@@ -582,7 +600,7 @@ namespace MediComponents {
         ///
         ///Normal Ca levels = 8.5 - 10.5 mg/dL.
         /// </summary>
-        internal static string CACorrectionExplanation {
+        public static string CACorrectionExplanation {
             get {
                 return ResourceManager.GetString("CACorrectionExplanation", resourceCulture);
             }
@@ -591,7 +609,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Calcium/albumin Correction.
         /// </summary>
-        internal static string CACorrectionTitle {
+        public static string CACorrectionTitle {
             get {
                 return ResourceManager.GetString("CACorrectionTitle", resourceCulture);
             }
@@ -600,7 +618,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Used to estimate creatinine clearance which is used to estimate GFR in ml/min.  Glomerular filtration rate (GFR) is the volume of fluid filtered from the glomerular capillaries into the bowman&apos;s capsule typically given at a per minute rate..
         /// </summary>
-        internal static string CGEExplanation {
+        public static string CGEExplanation {
             get {
                 return ResourceManager.GetString("CGEExplanation", resourceCulture);
             }
@@ -609,7 +627,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Cockcroft-Gault Equation.
         /// </summary>
-        internal static string CGETitle {
+        public static string CGETitle {
             get {
                 return ResourceManager.GetString("CGETitle", resourceCulture);
             }
@@ -618,16 +636,70 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Clinical Features.
         /// </summary>
-        internal static string ClinicalFeatures {
+        public static string ClinicalFeatures {
             get {
                 return ResourceManager.GetString("ClinicalFeatures", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FiO₂.
+        /// </summary>
+        public static string CompoundFiO2 {
+            get {
+                return ResourceManager.GetString("CompoundFiO2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HCO₃.
+        /// </summary>
+        public static string CompoundHCO3 {
+            get {
+                return ResourceManager.GetString("CompoundHCO3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PaCO₂.
+        /// </summary>
+        public static string CompoundPaCO2 {
+            get {
+                return ResourceManager.GetString("CompoundPaCO2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PaO₂.
+        /// </summary>
+        public static string CompoundPaO2 {
+            get {
+                return ResourceManager.GetString("CompoundPaO2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to pCO₂.
+        /// </summary>
+        public static string CompoundpCO2 {
+            get {
+                return ResourceManager.GetString("CompoundpCO2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to pH.
+        /// </summary>
+        public static string CompoundpH {
+            get {
+                return ResourceManager.GetString("CompoundpH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Creatinine.
         /// </summary>
-        internal static string Creatinine {
+        public static string Creatinine {
             get {
                 return ResourceManager.GetString("Creatinine", resourceCulture);
             }
@@ -639,7 +711,7 @@ namespace MediComponents {
         ///  - Intermediate bio-half life = 12-36 hours
         ///  - Long bio-half life [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string CSCExplanation {
+        public static string CSCExplanation {
             get {
                 return ResourceManager.GetString("CSCExplanation", resourceCulture);
             }
@@ -648,7 +720,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Corticosteroid Converter.
         /// </summary>
-        internal static string CSCTitle {
+        public static string CSCTitle {
             get {
                 return ResourceManager.GetString("CSCTitle", resourceCulture);
             }
@@ -657,7 +729,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Diabetes.
         /// </summary>
-        internal static string Diabetes {
+        public static string Diabetes {
             get {
                 return ResourceManager.GetString("Diabetes", resourceCulture);
             }
@@ -666,7 +738,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Duration.
         /// </summary>
-        internal static string Duration {
+        public static string Duration {
             get {
                 return ResourceManager.GetString("Duration", resourceCulture);
             }
@@ -675,7 +747,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Expected.
         /// </summary>
-        internal static string Expected {
+        public static string Expected {
             get {
                 return ResourceManager.GetString("Expected", resourceCulture);
             }
@@ -684,7 +756,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Explanation.
         /// </summary>
-        internal static string ExplanationTabTitle {
+        public static string ExplanationTabTitle {
             get {
                 return ResourceManager.GetString("ExplanationTabTitle", resourceCulture);
             }
@@ -693,7 +765,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Female.
         /// </summary>
-        internal static string Female {
+        public static string Female {
             get {
                 return ResourceManager.GetString("Female", resourceCulture);
             }
@@ -702,7 +774,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Formula.
         /// </summary>
-        internal static string FormulaTabTitle {
+        public static string FormulaTabTitle {
             get {
                 return ResourceManager.GetString("FormulaTabTitle", resourceCulture);
             }
@@ -711,7 +783,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to {0} - {1}.
         /// </summary>
-        internal static string FormulaTitleFormatString {
+        public static string FormulaTitleFormatString {
             get {
                 return ResourceManager.GetString("FormulaTitleFormatString", resourceCulture);
             }
@@ -720,7 +792,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to From the Modification of Diet in Renal Diseas study, is used to estimate glomerular filtration rate or the flow rate of filtered fluid through the kidney.  Will underestimate GFR in patients with GFR &gt;60 mL/min..
         /// </summary>
-        internal static string GfrExplanation {
+        public static string GfrExplanation {
             get {
                 return ResourceManager.GetString("GfrExplanation", resourceCulture);
             }
@@ -729,7 +801,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to GFR (MRDR).
         /// </summary>
-        internal static string GfrTitle {
+        public static string GfrTitle {
             get {
                 return ResourceManager.GetString("GfrTitle", resourceCulture);
             }
@@ -738,7 +810,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to High.
         /// </summary>
-        internal static string High {
+        public static string High {
             get {
                 return ResourceManager.GetString("High", resourceCulture);
             }
@@ -747,7 +819,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Indicative of {0}.
         /// </summary>
-        internal static string IndicativeOfFormat {
+        public static string IndicativeOfFormat {
             get {
                 return ResourceManager.GetString("IndicativeOfFormat", resourceCulture);
             }
@@ -756,7 +828,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Low.
         /// </summary>
-        internal static string Low {
+        public static string Low {
             get {
                 return ResourceManager.GetString("Low", resourceCulture);
             }
@@ -765,7 +837,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Metabolic Acidosis.
         /// </summary>
-        internal static string MetaAcid {
+        public static string MetaAcid {
             get {
                 return ResourceManager.GetString("MetaAcid", resourceCulture);
             }
@@ -774,7 +846,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Metabolic Alkalosis.
         /// </summary>
-        internal static string MetaAlka {
+        public static string MetaAlka {
             get {
                 return ResourceManager.GetString("MetaAlka", resourceCulture);
             }
@@ -783,7 +855,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Respiratory Acidosis.
         /// </summary>
-        internal static string RespAcid {
+        public static string RespAcid {
             get {
                 return ResourceManager.GetString("RespAcid", resourceCulture);
             }
@@ -792,7 +864,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Respiratory Alkalosis.
         /// </summary>
-        internal static string RespAlka {
+        public static string RespAlka {
             get {
                 return ResourceManager.GetString("RespAlka", resourceCulture);
             }
@@ -801,7 +873,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Score = .
         /// </summary>
-        internal static string ScoreEquals {
+        public static string ScoreEquals {
             get {
                 return ResourceManager.GetString("ScoreEquals", resourceCulture);
             }
@@ -810,7 +882,7 @@ namespace MediComponents {
         /// <summary>
         ///   Looks up a localized string similar to Actual level is {0} (potential underlying {1}).
         /// </summary>
-        internal static string UnderlyingFormat {
+        public static string UnderlyingFormat {
             get {
                 return ResourceManager.GetString("UnderlyingFormat", resourceCulture);
             }

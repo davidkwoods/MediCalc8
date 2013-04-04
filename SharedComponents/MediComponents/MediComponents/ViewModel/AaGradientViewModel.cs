@@ -1,6 +1,8 @@
-﻿
+﻿using System.Runtime.Serialization;
+
 namespace MediComponents.ViewModel
 {
+	[DataContract]
 	public class AaGradientViewModel : ViewModel
 	{
 		public string Title
@@ -9,6 +11,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private double _fiO2;
+		[DataMember]
 		public double FiO2
 		{
 			get { return _fiO2; }
@@ -18,25 +21,9 @@ namespace MediComponents.ViewModel
 					OnPropertyChanged(() => Result);
 			}
 		}
-		/*
-		public string FiO2
-		{
-			get { return _fiO2.ToString(); }
-			set
-			{
-				double temp;
-				if (double.TryParse(value, out temp))
-				{
-					if(SetProperty(ref _fiO2, temp))
-					{
-						OnPropertyChanged(() => Result);
-					}
-				}
-			}
-		}
-		*/
 
 		private double _paO2;
+		[DataMember]
 		public double PaO2
 		{
 			get { return _paO2; }
@@ -46,25 +33,9 @@ namespace MediComponents.ViewModel
 					OnPropertyChanged(() => Result);
 			}
 		}
-		/*
-		public string PaO2
-		{
-			get { return _paO2.ToString(); }
-			set
-			{
-				double temp;
-				if (double.TryParse(value, out temp))
-				{
-					if (SetProperty(ref _paO2, temp))
-					{
-						OnPropertyChanged(() => Result);
-					}
-				}
-			}
-		}
-		*/
 
 		private double _paCO2;
+		[DataMember]
 		public double PaCO2
 		{
 			get { return _paCO2; }
@@ -74,34 +45,36 @@ namespace MediComponents.ViewModel
 					OnPropertyChanged(() => Result);
 			}
 		}
-		/*
-		public string PaCO2
-		{
-			get { return _paCO2.ToString(); }
-			set
-			{
-				double temp;
-				if (double.TryParse(value, out temp))
-				{
-					if (SetProperty(ref _paCO2, temp))
-					{
-						OnPropertyChanged(() => Result);
-					}
-				}
-			}
-		}
-		*/
 
-		public double Result
+		public string Result
 		{
-			get  { return ((713 * FiO2) - (PaCO2 / 0.8)) - PaO2; }
+			get  { return string.Format(Strings.AaGradientResultFormat, ((713 * FiO2) - (PaCO2 / 0.8)) - PaO2); }
 		}
 
-		protected override void Initialize()
+		public AaGradientViewModel() : base() { }
+		public AaGradientViewModel(bool isDesign) : base(isDesign) { }
+
+		protected override void InitializeDesignTime()
+		{
+			InitializeRunTime();
+		}
+
+		protected override void InitializeRunTime()
 		{
 			_paO2 = 90;
 			_paCO2 = 40;
 			_fiO2 = 2;
+		}
+
+		public override bool Rehydrate(object vm)
+		{
+			var other = vm as AaGradientViewModel;
+			if (other == null)
+				return false;
+			PaCO2 = other.PaCO2;
+			PaO2 = other.PaO2;
+			FiO2 = other.FiO2;
+			return base.Rehydrate(vm);
 		}
 	}
 }

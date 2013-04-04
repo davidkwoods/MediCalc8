@@ -1,6 +1,8 @@
-﻿
+﻿using System.Runtime.Serialization;
+
 namespace MediComponents.ViewModel
 {
+	[DataContract]
 	public class ABCompViewModel : ViewModel
 	{
 		public string Title
@@ -9,6 +11,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private int _ph;
+		[DataMember]
 		public int Ph
 		{
 			get { return _ph; }
@@ -20,6 +23,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private int _hco3;
+		[DataMember]
 		public int Hco3
 		{
 			get { return _hco3; }
@@ -31,6 +35,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private int _pco2;
+		[DataMember]
 		public int Pco2
 		{
 			get { return _pco2; }
@@ -81,12 +86,30 @@ namespace MediComponents.ViewModel
 			}
 		}
 
+		public ABCompViewModel() : base() { }
+		public ABCompViewModel(bool isDesign) : base(isDesign) { }
 
-		protected override void Initialize()
+		protected override void InitializeDesignTime()
+		{
+			InitializeRunTime();
+		}
+
+		protected override void InitializeRunTime()
 		{
 			Ph = 0;
 			Pco2 = 0;
 			Hco3 = 0;
+		}
+
+		public override bool Rehydrate(object vm)
+		{
+			var other = vm as ABCompViewModel;
+			if (other == null)
+				return false;
+			Ph = other.Ph;
+			Pco2 = other.Pco2;
+			Hco3 = other.Hco3;
+			return base.Rehydrate(vm);
 		}
 	}
 

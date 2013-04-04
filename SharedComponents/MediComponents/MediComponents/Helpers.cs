@@ -1,15 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Xml.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.ObjectModel;
 
 namespace MediComponents
 {
-	public static class Extensions
+	public static class Helpers
 	{
+		public static T GetExistingOrNew<T>(ref T backer) where T : new()
+		{
+			if (backer == null)
+				backer = new T();
+			return backer;
+		}
+		
 		public static string GetValue(this XAttribute attribute)
 		{
 			return attribute != null ? attribute.Value : null;

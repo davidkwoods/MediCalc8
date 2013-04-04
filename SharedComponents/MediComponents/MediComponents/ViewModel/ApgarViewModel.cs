@@ -1,6 +1,8 @@
-﻿
+﻿using System.Runtime.Serialization;
+
 namespace MediComponents.ViewModel
 {
+	[DataContract]
 	public class ApgarViewModel : ViewModel
 	{
 		public string Title
@@ -9,6 +11,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private int _appearance;
+		[DataMember]
 		public int Appearance
 		{
 			get { return _appearance; }
@@ -20,6 +23,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private int _pulse;
+		[DataMember]
 		public int Pulse
 		{
 			get { return _pulse; }
@@ -31,6 +35,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private int _grimace;
+		[DataMember]
 		public int Grimace
 		{
 			get { return _grimace; }
@@ -42,6 +47,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private int _activity;
+		[DataMember]
 		public int Activity
 		{
 			get { return _activity; }
@@ -53,6 +59,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private int _respiration;
+		[DataMember]
 		public int Respiration
 		{
 			get { return _respiration; }
@@ -68,13 +75,34 @@ namespace MediComponents.ViewModel
 			get { return Appearance + Pulse + Grimace + Activity + Respiration; }
 		}
 
-		protected override void Initialize()
+		public ApgarViewModel() : base() { }
+		public ApgarViewModel(bool isDesign) : base(isDesign) { }
+
+		protected override void InitializeDesignTime()
+		{
+			InitializeRunTime();
+		}
+
+		protected override void InitializeRunTime()
 		{
 			Activity = 1;
 			Appearance = 1;
 			Pulse = 1;
 			Grimace = 1;
 			Respiration = 1;
+		}
+
+		public override bool Rehydrate(object vm)
+		{
+			var other = vm as ApgarViewModel;
+			if (other == null)
+				return false;
+			Activity = other.Activity;
+			Appearance = other.Appearance;
+			Pulse = other.Pulse;
+			Grimace = other.Grimace;
+			Respiration = other.Respiration;
+			return base.Rehydrate(vm);
 		}
 	}
 }

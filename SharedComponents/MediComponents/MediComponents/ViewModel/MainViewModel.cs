@@ -1,16 +1,14 @@
 ﻿using MediComponents.Model;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization;
 using System.Xml.Linq;
 
 namespace MediComponents.ViewModel
 {
+	[DataContract]
 	public class MainViewModel : ViewModel
 	{
+		[DataMember]
 		public ObservableCollection<PageInfo> Pages { get; private set; }
 
 		private string _title;
@@ -27,9 +25,27 @@ namespace MediComponents.ViewModel
 			set { SetProperty(ref _subtitle, value); }
 		}
 
-		protected override void Initialize()
+		public MainViewModel() : base() { }
+		public MainViewModel(bool isDesign) : base(isDesign) { }
+
+		protected override void InitializeRunTime()
 		{
 			LoadPages();
+		}
+
+		protected override void InitializeDesignTime()
+		{
+			Pages = new ObservableCollection<PageInfo>();
+			Pages.Add(new PageInfo() { Title = "Apgar", Summary = "Newborn Evaluation" });
+		}
+
+		public override bool Rehydrate(object vm)
+		{
+			var other = vm as MainViewModel;
+			if (other == null)
+				return false;
+			Pages = other.Pages;
+			return base.Rehydrate(vm);
 		}
 
 		private void LoadPages()

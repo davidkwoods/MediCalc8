@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Serialization;
 
 namespace MediComponents.ViewModel
 {
-	class AnionGapViewModel : ViewModel
+	[DataContract]
+	public class AnionGapViewModel : ViewModel
 	{
 		public string Title
 		{
@@ -14,6 +11,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private double _na;
+		[DataMember]
 		public double Na
 		{
 			get { return _na; }
@@ -25,6 +23,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private double _k;
+		[DataMember]
 		public double K
 		{
 			get { return _k; }
@@ -36,6 +35,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private double _cl;
+		[DataMember]
 		public double Cl
 		{
 			get { return _cl; }
@@ -47,6 +47,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private double _hCO2;
+		[DataMember]
 		public double HCO2
 		{
 			get { return _hCO2; }
@@ -62,12 +63,32 @@ namespace MediComponents.ViewModel
 			get { return (Na + K) - (Cl + HCO2); }
 		}
 
-		protected override void Initialize()
+		public AnionGapViewModel() : base() { }
+		public AnionGapViewModel(bool isDesign) : base(isDesign) { }
+
+		protected override void InitializeDesignTime()
+		{
+			InitializeRunTime();
+		}
+
+		protected override void InitializeRunTime()
 		{
 			_k = 0;
 			_na = 0;
 			_cl = 0;
 			_hCO2 = 0;
+		}
+
+		public override bool Rehydrate(object vm)
+		{
+			var other = vm as AnionGapViewModel;
+			if (other == null)
+				return false;
+			K = other.K;
+			Na = other.Na;
+			Cl = other.Cl;
+			HCO2 = other.HCO2;
+			return base.Rehydrate(vm);
 		}
 	}
 }

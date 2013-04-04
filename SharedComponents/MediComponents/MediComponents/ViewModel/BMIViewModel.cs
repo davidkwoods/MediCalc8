@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace MediComponents.ViewModel
 {
-	class BMIViewModel : ViewModel
+	[DataContract]
+	public class BMIViewModel : ViewModel
 	{
 		public string Title
 		{
@@ -10,6 +12,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private double _height;
+		[DataMember]
 		public double Height
 		{
 			get { return _height; }
@@ -24,6 +27,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private double _weight;
+		[DataMember]
 		public double Weight
 		{
 			get { return _weight; }
@@ -58,10 +62,28 @@ namespace MediComponents.ViewModel
 			}
 		}
 
-		protected override void Initialize()
+		public BMIViewModel() : base() { }
+		public BMIViewModel(bool isDesign) : base(isDesign) { }
+
+		protected override void InitializeDesignTime()
+		{
+			InitializeRunTime();
+		}
+
+		protected override void InitializeRunTime()
 		{
 			_weight = 150;
 			_height = 72;
+		}
+
+		public override bool Rehydrate(object vm)
+		{
+			var other = vm as BMIViewModel;
+			if (other == null)
+				return false;
+			Weight = other.Weight;
+			Height = other.Height;
+			return base.Rehydrate(vm);
 		}
 	}
 }

@@ -163,13 +163,13 @@
     <value>When a patient experiences a Transient Ischemic Attack (TIA) the ABCD2 score is used to determine the risk for stroke within the first two days post attack. The ABCD2 score is graded on 5 criteria: clinical features, age, duration of TIA, blood pressure, and presence of diabetes. The evaluation is added up and the score ranges from 0‐7: 0‐3 is low (2 day risk = 1.0%, 7 day risk = 1.2), 4‐5 is moderate (2 day risk = 4.1%, 7 day risk = 5.9%), 6‐7 is high (2 day risk = 8.1%, 7 day risk = 11.7%).</value>
   </data>
   <data name="ABCD2High" xml:space="preserve">
-    <value> (high)</value>
+    <value>(high)</value>
   </data>
   <data name="ABCD2Low" xml:space="preserve">
-    <value> (low)</value>
+    <value>(low)</value>
   </data>
   <data name="ABCD2Mod" xml:space="preserve">
-    <value> (moderate)</value>
+    <value>(moderate)</value>
   </data>
   <data name="ABCD2Title" xml:space="preserve">
     <value>ABCD2</value>
@@ -394,5 +394,32 @@ Normal Ca levels = 8.5 - 10.5 mg/dL</value>
   </data>
   <data name="CSCTitle" xml:space="preserve">
     <value>Corticosteroid Converter</value>
+  </data>
+  <data name="CompoundFiO2" xml:space="preserve">
+    <value>FiO₂</value>
+  </data>
+  <data name="AaGradientResultFormat" xml:space="preserve">
+    <value>A-a Gradient = {0} mmHg</value>
+  </data>
+  <data name="CompoundPaCO2" xml:space="preserve">
+    <value>PaCO₂</value>
+  </data>
+  <data name="CompoundPaO2" xml:space="preserve">
+    <value>PaO₂</value>
+  </data>
+  <data name="ABCD2ResultFormat" xml:space="preserve">
+    <value>{0} {1} {2}</value>
+    <comment>{0} = ScoreEquals
+{1} = the score
+{2} = the risk level</comment>
+  </data>
+  <data name="CompoundHCO3" xml:space="preserve">
+    <value>HCO₃</value>
+  </data>
+  <data name="CompoundpCO2" xml:space="preserve">
+    <value>pCO₂</value>
+  </data>
+  <data name="CompoundpH" xml:space="preserve">
+    <value>pH</value>
   </data>
 </root>

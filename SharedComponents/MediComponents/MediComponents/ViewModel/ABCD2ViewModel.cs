@@ -1,6 +1,8 @@
-﻿
+﻿using System.Runtime.Serialization;
+
 namespace MediComponents.ViewModel
 {
+	[DataContract]
 	public class ABCD2ViewModel : ViewModel
 	{
 		public string Title
@@ -9,6 +11,7 @@ namespace MediComponents.ViewModel
 		}
 
 		private int _age;
+		[DataMember]
 		public int Age
 		{
 			get { return _age; }
@@ -16,13 +19,13 @@ namespace MediComponents.ViewModel
 			{
 				if (SetProperty(ref _age, value))
 				{
-					OnPropertyChanged(() => Score);
-					OnPropertyChanged(() => Risk);
+					OnPropertyChanged(() => Result);
 				}
 			}
 		}
 
 		private int _bloodPressure;
+		[DataMember]
 		public int BloodPressure
 		{
 			get { return _bloodPressure; }
@@ -30,13 +33,13 @@ namespace MediComponents.ViewModel
 			{
 				if (SetProperty(ref _bloodPressure, value))
 				{
-					OnPropertyChanged(() => Score);
-					OnPropertyChanged(() => Risk);
+					OnPropertyChanged(() => Result);
 				}
 			}
 		}
 
 		private int _clinicalFeatures;
+		[DataMember]
 		public int ClinicalFeatures
 		{
 			get { return _clinicalFeatures; }
@@ -44,13 +47,13 @@ namespace MediComponents.ViewModel
 			{
 				if (SetProperty(ref _clinicalFeatures, value))
 				{
-					OnPropertyChanged(() => Score);
-					OnPropertyChanged(() => Risk);
+					OnPropertyChanged(() => Result);
 				}
 			}
 		}
 
 		private int _duration;
+		[DataMember]
 		public int Duration
 		{
 			get { return _duration; }
@@ -58,13 +61,13 @@ namespace MediComponents.ViewModel
 			{
 				if (SetProperty(ref _duration, value))
 				{
-					OnPropertyChanged(() => Score);
-					OnPropertyChanged(() => Risk);
+					OnPropertyChanged(() => Result);
 				}
 			}
 		}
 
 		private int _diabetes;
+		[DataMember]
 		public int Diabetes
 		{
 			get { return _diabetes; }
@@ -72,8 +75,7 @@ namespace MediComponents.ViewModel
 			{
 				if (SetProperty(ref _diabetes, value))
 				{
-					OnPropertyChanged(() => Score);
-					OnPropertyChanged(() => Risk);
+					OnPropertyChanged(() => Result);
 				}
 			}
 		}
@@ -97,13 +99,39 @@ namespace MediComponents.ViewModel
 			}
 		}
 
-		protected override void Initialize()
+		public string Result
+		{
+			get { return string.Format(Strings.ABCD2ResultFormat, Strings.ScoreEquals, Score, Risk); }
+		}
+
+		public ABCD2ViewModel() : base() { }
+		public ABCD2ViewModel(bool isDesign) : base(isDesign) { }
+
+		protected override void InitializeDesignTime()
+		{
+			InitializeRunTime();
+		}
+
+		protected override void InitializeRunTime()
 		{
 			Age = 0;
 			BloodPressure = 0;
 			ClinicalFeatures = 0;
 			Duration = 0;
 			Diabetes = 0;
+		}
+
+		public override bool Rehydrate(object vm)
+		{
+			var other = vm as ABCD2ViewModel;
+			if (other == null)
+				return false;
+			Age = other.Age;
+			BloodPressure = other.BloodPressure;
+			ClinicalFeatures = other.ClinicalFeatures;
+			Duration = other.Duration;
+			Diabetes = other.Diabetes;
+			return base.Rehydrate(vm);
 		}
 	}
 }

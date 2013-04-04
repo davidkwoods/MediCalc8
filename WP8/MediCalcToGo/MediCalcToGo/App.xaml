@@ -4,19 +4,27 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
-    xmlns:sys="clr-namespace:System;assembly=mscorlib">
-
-    <!--Application Resources-->
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:vm="clr-namespace:MediComponents.ViewModel;assembly=MediComponents"
+    xmlns:components="clr-namespace:MediComponents;assembly=MediComponents">
     <Application.Resources>
-        <sys:Double x:Key="PanoramaItemHeaderFontSize">66</sys:Double>
 
-        <Style x:Key="PanoramaItemHeaderTextStyle" TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
-            <Setter Property="FontSize" Value="{StaticResource PanoramaItemHeaderFontSize}"/>
-            <Setter Property="CharacterSpacing" Value="-35"/>
-        </Style>
-        
-        <local:LocalizedStrings xmlns:local="clr-namespace:MediCalcToGo" x:Key="LocalizedStrings"/>
+        <!--Application Resources-->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="StyleResources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <sys:Double x:Key="PanoramaItemHeaderFontSize">66</sys:Double>
+
+            <Style x:Key="PanoramaItemHeaderTextStyle" TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
+                <Setter Property="FontSize" Value="{StaticResource PanoramaItemHeaderFontSize}"/>
+                <Setter Property="CharacterSpacing" Value="-35"/>
+            </Style>
+
+            <vm:ViewModelLocator x:Key="ViewModelLocator"/>
+            <components:PublicStrings x:Key="Strings"/>
+        </ResourceDictionary>
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>
